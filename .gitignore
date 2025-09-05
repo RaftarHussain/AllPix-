@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Django stuff
+*.log
+*.pot
+*.pyc
+*.sqlite3
+db.sqlite3
+media/
+
+# If you collectstatic locally
+/staticfiles/
+/static/
+
+# Environment
+.env
+*.env
+
+# Virtualenv
+venv/
+env/
+ENV/
+.venv/
+.envrc
+
+# IDE / Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.DS_Store
+
+# Render/Heroku
+*.pid
