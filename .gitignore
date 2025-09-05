@@ -16,8 +16,6 @@ db.sqlite3
 media/
 
 # If you collectstatic locally
-/staticfiles/
-/static/
 
 # Environment
 .env
