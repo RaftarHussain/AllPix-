@@ -1,12 +1,12 @@
 services:
   - type: web
-    name: allpix-gallery
+    name: imagegallery
     env: python
     buildCommand: |
       pip install -r requirements.txt
       python manage.py collectstatic --noinput
       python manage.py migrate
-    startCommand: gunicorn your_project_name.wsgi:application
+    startCommand: gunicorn imagegallery.wsgi:application
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: imagegallery.settings
