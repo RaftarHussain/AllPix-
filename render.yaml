@@ -10,6 +10,4 @@ services:
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: imagegallery.settings
-      - key: PYTHON_VERSION
-        value: 3.11
-      
+     
