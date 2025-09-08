@@ -91,8 +91,8 @@ DATABASES = {
 }
 
 DATABASE_URL = os.environ.get("DATABASE_URL")
-if DATABASE_URL:
-    DATABASES["default"] = dj_database_url.parse(DATABASE_URL)
+
+DATABASES["default"] = dj_database_url.parse(DATABASE_URL)
 
 
 # Password validation
@@ -137,7 +137,7 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
-
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': os.environ.get('CLOUDINARY_CLOUD_NAME'),
@@ -149,4 +149,3 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
